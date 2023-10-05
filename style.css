@@ -1,0 +1,171 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background-image: linear-gradient(
+    to top,
+    #191919,
+    #262626,
+    #343434,
+    #434343,
+    #525252
+  );
+  position: relative;
+}
+
+#card-container {
+  width: auto;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+/* ----GRADIENT---- */
+
+#card-container .background-gradient {
+  opacity: 0;
+  transition: 0.6s;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(15, 15, 5);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(15, 15, 5, 0.75) 0%,
+    rgba(20, 20, 20, 0.75) 35%,
+    rgba(60, 60, 60, 0.3022001036742822) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(15, 15, 5, 0.75) 0%,
+    rgba(20, 20, 20, 0.75) 35%,
+    rgba(60, 60, 60, 0.3022001036742822) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(15, 15, 5, 0.75) 0%,
+    rgba(20, 20, 20, 0.75) 35%,
+    rgba(60, 60, 60, 0.3022001036742822) 100%
+  );
+}
+
+#card-container:hover .background-gradient {
+  opacity: 1;
+}
+
+/* ----IMG---- */
+
+img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+/* ----SAVE BUTTON---- */
+
+#save-button {
+  opacity: 0;
+  transition: top 0.3s, opacity 0.3s;
+  background-color: rgb(211, 45, 47);
+  color: white;
+  font-size: 14pt;
+  font-weight: bold;
+  position: absolute;
+  top: -60px;
+  left: 230px;
+  border: none;
+  border-radius: 30px;
+  padding: 5%;
+}
+
+#card-container:hover #save-button {
+  opacity: 1;
+  top: 20px;
+}
+
+/* ----MENU BUTTON---- */
+
+#menu-button {
+  opacity: 0;
+  transition: bottom 0.3s, opacity 0.3s;
+  background-color: rgb(236, 236, 236);
+  color: rgb(17, 17, 17);
+  font-size: 20pt;
+  position: absolute;
+  bottom: -40px;
+  left: 270px;
+  border-radius: 30px;
+  padding: 6px;
+  z-index: 2;
+}
+
+#card-container:hover #menu-button {
+  opacity: 1;
+  bottom: 20px;
+}
+
+/* ----SEND BUTTON---- */
+
+#send-button {
+  opacity: 0;
+  transition: bottom 0.3s, opacity 0.3s;
+  background-color: rgb(236, 236, 236);
+  color: rgb(17, 17, 17);
+  font-size: 20pt;
+  position: absolute;
+  bottom: -40px;
+  left: 220px;
+  border-radius: 30px;
+  padding: 6px;
+  z-index: 2;
+}
+
+#card-container:hover #send-button {
+  opacity: 1;
+  bottom: 20px;
+}
+
+/* ----VISIT BUTTON---- */
+
+#visit-button {
+  height: 26.67px;
+  line-height: 26.67px;
+  opacity: 1;
+  transition: bottom 0.3s, opacity 0.3s;
+  background-color: rgb(236, 236, 236);
+  color: rgb(17, 17, 17);
+  font-size: 20pt;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  position: absolute;
+  bottom: -40px;
+  left: 25px;
+  border-radius: 30px;
+  padding: 6px;
+  padding-right: 150px;
+  z-index: 2;
+}
+
+#visit-button span {
+  font-size: 10pt;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.button-text {
+  font-size: 20pt;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  position: absolute;
+  padding-inline: 5px;
+}
+
+#card-container:hover #visit-button {
+  opacity: 1;
+  bottom: 20px;
+}
