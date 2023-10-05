@@ -66,6 +66,22 @@ img {
   z-index: -1;
 }
 
+#menu-button,
+#send-button,
+#visit-button {
+  opacity: 0;
+  transition: bottom 0.3s, opacity 0.3s;
+  background-color: rgba(236, 236, 236, 0.9);
+  color: rgb(17, 17, 17);
+  font-size: 20pt;
+  position: absolute;
+  bottom: -40px;
+  left: 270px;
+  border-radius: 30px;
+  padding: 6px;
+  z-index: 2;
+}
+
 /* ----SAVE BUTTON---- */
 
 #save-button {
@@ -88,41 +104,27 @@ img {
   top: 20px;
 }
 
-/* ----MENU BUTTON---- */
-
-#menu-button {
-  opacity: 0;
-  transition: bottom 0.3s, opacity 0.3s;
-  background-color: rgb(236, 236, 236);
-  color: rgb(17, 17, 17);
-  font-size: 20pt;
-  position: absolute;
-  bottom: -40px;
-  left: 270px;
-  border-radius: 30px;
-  padding: 6px;
-  z-index: 2;
+#save-button:hover {
+  cursor: pointer;
+  background-color: rgb(182, 36, 38);
 }
+
+/* ----MENU BUTTON---- */
 
 #card-container:hover #menu-button {
   opacity: 1;
   bottom: 20px;
 }
 
+#menu-button:hover {
+  cursor: pointer;
+  background-color: rgb(236, 236, 236);
+}
+
 /* ----SEND BUTTON---- */
 
 #send-button {
-  opacity: 0;
-  transition: bottom 0.3s, opacity 0.3s;
-  background-color: rgb(236, 236, 236);
-  color: rgb(17, 17, 17);
-  font-size: 20pt;
-  position: absolute;
-  bottom: -40px;
   left: 220px;
-  border-radius: 30px;
-  padding: 6px;
-  z-index: 2;
 }
 
 #card-container:hover #send-button {
@@ -130,14 +132,29 @@ img {
   bottom: 20px;
 }
 
+#send-button:hover {
+  cursor: pointer;
+  background-color: rgb(236, 236, 236);
+}
+
 /* ----VISIT BUTTON---- */
 
 #visit-button {
   height: 26.67px;
   line-height: 26.67px;
-  opacity: 1;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  left: 25px;
+  padding-right: 150px;
+  z-index: 2;
+}
+
+/* #visit-button {
+  height: 26.67px;
+  line-height: 26.67px;
+  opacity: 0;
   transition: bottom 0.3s, opacity 0.3s;
-  background-color: rgb(236, 236, 236);
+  background-color: rgba(236, 236, 236, 0.9);
   color: rgb(17, 17, 17);
   font-size: 20pt;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -149,12 +166,17 @@ img {
   padding: 6px;
   padding-right: 150px;
   z-index: 2;
-}
+} */
 
 #visit-button span {
   font-size: 10pt;
   font-weight: bold;
   vertical-align: middle;
+}
+
+#visit-button:hover {
+  cursor: pointer;
+  background-color: rgb(236, 236, 236);
 }
 
 .button-text {
